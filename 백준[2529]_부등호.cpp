@@ -25,6 +25,7 @@ void func(int left_num, int now_boo, string result) {
 	for (int i = 0; i <= 9; i++) {
 		if (numbers[i] == true) continue;
 
+		else {
 			if (boo[now_boo] == '<' && left_num < i) {
 				numbers[i] = true;
 				func(i, now_boo + 1,result+to_string(i));
